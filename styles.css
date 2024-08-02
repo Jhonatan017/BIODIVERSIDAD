@@ -1,39 +1,112 @@
+* {
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar rellenos */
+    box-sizing: border-box; /* Usar el modelo de caja para todos los elementos */
+}
+
+/* Estilo básico del cuerpo */
 body {
-    font-family: Arial, sans-serif; /* Fuente de texto */
-    background-color: #f0f0f0; /* Color de fondo */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Altura completa de la ventana */
-section{
-background-color: #fff; /* Fondo blanco */
-    padding: 20px; /* Relleno alrededor del contenido */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la sección */
-    border-radius: 10px; /* Bordes redondeados */
-    width: 100%; /* Ancho completo */
-    max-width: 400px; /* Ancho máximo */
-    margin: 0 auto;
-#paises {
-    font-size:16px;
-    width: 100%; /* Ancho completo */
-    display: block; /* Mostrar como bloque */
-    margin-bottom: 5px; /* Espaciado inferior */
-    color: #333; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente por defecto */
+    background-color: #F2F0D8;/*Fondo de la pagina web*/
 }
-label {
-    display: block; /* Mostrar como bloque */
-    margin-bottom: 5px; /* Espaciado inferior */
-    color: #333; /* Color del texto */
+
+/* Estilo de la cabecera */
+header {
+    background-color: #44803F; /* Color de fondo oscuro */
+    padding: 20px 20px; /* Espaciado interno */
+    color: #F2F0D8; /* Color de texto blanco */
 }
-input {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Relleno interno */
-    background-color: #3498db; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 10px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero */
-    font-size: 16px; /* Tamaño de fuente */
+
+/* Contenedor de la barra de navegación */
+nav {
+    display: flex; /* Usar flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alinear elementos en el centro verticalmente */
 }
-input:hover {
-    background-color: #2980b9; /* Color de fondo al pasar el cursor */
-input:hover {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+/* Titulo de la pagina */
+.titulo {
+    align-content: center;
+    display: center;
+    justify-self:center;
+    font-size: 25px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+p{
+  border: red 2px solid;
+  margin-left:155px;
+  margin-right:155px;
+  justify-items: auto;
+}    
+/* Estilo de la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Eliminar viñetas de la lista */
+    display: flex; /* Usar flexbox para la disposición en línea */
+}
+/* Estilo de los elementos de la lista */
+.nav-links li {
+    margin-left: 20px; /* Espaciado entre enlaces */
+}
+
+/* Estilo de los enlaces */
+.nav-links a {
+    color: #F2F0D8; /* Color de texto blanco */
+    text-decoration: none; /* Eliminar subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Efecto hover en los enlaces */
+.nav-links a:hover {
+    color: #A65729; /* Cambiar a color tomate al pasar el ratón */
+}
+/* Estilos específicos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    /* Hacer que los enlaces se dispongan en columna y se oculten por defecto */
+    .nav-links {
+        display: none; /* Oculto por defecto */
+        flex-direction: column; /* Disponer en columna */
+        width: 100%; /* Ancho completo */
+        position: absolute; /* Posición absoluta */
+        top: 70px; /* Desplazamiento desde la parte superior */
+        left: 0; /* Alineado a la izquierda */
+        background-color: #0973fe; /* Mismo color de fondo que la cabecera */
+    }
+
+    /* Espaciado entre enlaces en la vista móvil */
+    .nav-links li {
+        margin: 10px 0; /* Espaciado vertical entre enlaces */
+    }
+
+
+    /* Mostrar el ícono de menú en pantallas pequeñas */
+    .burger {
+        display: block; /* Mostrar el ícono */
+    }
+
+    /* Mostrar la lista de enlaces cuando el checkbox está marcado */
+    .menu-toggle:checked ~ .nav-links {
+        display: flex; /* Mostrar la lista */
+    }
+
+    /* Animaciones del ícono de menú cuando el checkbox está marcado */
+    .menu-toggle:checked ~ .burger .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px); /* Girar y desplazar la primera línea */
+    }
+
+    .menu-toggle:checked ~ .burger .line2 {
+        opacity: 0; /* Ocultar la segunda línea */
+    }
+
+    .menu-toggle:checked ~ .burger .line3 {
+        transform: rotate(45deg) translate(-5px, -6px); /* Girar y desplazar la tercera línea */
+    }
+}
+
