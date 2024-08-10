@@ -1,3 +1,4 @@
+/* Restablecer márgenes y rellenos para todos los elementos */
 * {
     margin: 0; /* Eliminar márgenes */
     padding: 0; /* Eliminar rellenos */
@@ -7,16 +8,22 @@
 /* Estilo básico del cuerpo */
 body {
     font-family: Arial, sans-serif; /* Fuente por defecto */
+    font-size: 20px;
     background-color: #F2F0D8;/*Fondo de la pagina web*/
+
 }
+h1{
+ text-align: center; /*Titulos centrados*/
+
+}  
 
 /* Estilo de la cabecera */
 header {
-    background-color: #44803F; /* Color de fondo oscuro */
-    padding: 20px 20px; /* Espaciado interno */
-    color: #F2F0D8; /* Color de texto blanco */
+    background-color: rgba(23, 122, 21, 0.848);; /* Color de fondo oscuro */
+    padding: 30px 30px; /* Espaciado interno */
+    color: white; /* Color de texto blanco */
+    text-align: center;
 }
-
 /* Contenedor de la barra de navegación */
 nav {
     display: flex; /* Usar flexbox para la disposición */
@@ -27,22 +34,34 @@ nav {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 25 px;
 }
 /* Titulo de la pagina */
 .titulo {
+    font-family: sans-serif;
     align-content: center;
     display: center;
     justify-self:center;
-    font-size: 25px; /* Tamaño de fuente grande */
+    font-size: 30px; /* Tamaño de fuente grande */
     font-weight: bold; /* Texto en negrita */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
-p{
-  margin-left:155px;
-  margin-right:155px;
+.container{
+    text-align: center;
+   /* border: red 2px solid;*/
+  margin-left:200px;
+  margin-right:200px;
   justify-items: auto;
+}
+section{
+    font-family:;
+ /* border: red 2px solid;*/
+  margin-left:200px;
+  margin-right:200px;
+  justify-items: auto;
+  text-align: justify;
 }    
 /* Estilo de la lista de enlaces de navegación */
 .nav-links {
@@ -68,44 +87,142 @@ p{
 }
 /* Estilos específicos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
-    /* Hacer que los enlaces se dispongan en columna y se oculten por defecto */
-    .nav-links {
-        display: none; /* Oculto por defecto */
-        flex-direction: column; /* Disponer en columna */
-        width: 100%; /* Ancho completo */
-        position: absolute; /* Posición absoluta */
-        top: 70px; /* Desplazamiento desde la parte superior */
-        left: 0; /* Alineado a la izquierda */
-        background-color: #0973fe; /* Mismo color de fondo que la cabecera */
-    }
-
-    /* Espaciado entre enlaces en la vista móvil */
-    .nav-links li {
-        margin: 10px 0; /* Espaciado vertical entre enlaces */
-    }
-
-
-    /* Mostrar el ícono de menú en pantallas pequeñas */
-    .burger {
-        display: block; /* Mostrar el ícono */
-    }
-
-    /* Mostrar la lista de enlaces cuando el checkbox está marcado */
-    .menu-toggle:checked ~ .nav-links {
-        display: flex; /* Mostrar la lista */
-    }
-
-    /* Animaciones del ícono de menú cuando el checkbox está marcado */
-    .menu-toggle:checked ~ .burger .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px); /* Girar y desplazar la primera línea */
-    }
-
-    .menu-toggle:checked ~ .burger .line2 {
-        opacity: 0; /* Ocultar la segunda línea */
-    }
-
-    .menu-toggle:checked ~ .burger .line3 {
-        transform: rotate(45deg) translate(-5px, -6px); /* Girar y desplazar la tercera línea */
-    }
+}
+.slider-box {
+    width: 1200px;
+    height: auto;
+    margin: 0% auto;
+    overflow: hidden;
 }
 
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 400%; /* 4 imágenes, cada una ocupa el 100% del ancho del contenedor */
+    animation: slide 12s infinite;
+}
+
+.slider-box li {
+    width: 25%; /* Cada elemento `li` ocupa un 25% del ancho total del `ul` */
+    list-style: none;
+}
+
+.slider-box img {
+    margin: 0%;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { margin-left: 0%; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: 0%; } /* Regresa al inicio para repetir */
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra las columnas en el contenedor */
+}
+
+/* Cada galería individual */
+div.galeria {
+    box-sizing: border-box; /* Asegura que el padding y border no aumenten el ancho */
+    margin: 10px;
+    border: 1px solid #130202;
+    width: 350px;
+}
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: justify;
+}
+ul{
+list-style: none; /* Eliminar viñetas de la lista */
+margin-bottom: 15px;
+}
+/*Aqui comienza el formulario de contacto */
+  /* Contenedor que rodea el formulario */
+#contacto {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
+}
+
+form {
+    margin-top: 80px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 55px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 600px;
+    height: 750px;
+}
+.input-grid{
+    display: grid;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: #283629;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+
+.form-text {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-text a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(23, 122, 21, 0.848);
+}
