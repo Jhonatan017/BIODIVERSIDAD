@@ -1,61 +1,186 @@
-<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
 <html lang="es"> <!-- Inicio del documento HTML, con idioma español -->
 <head> <!-- Contenedor de metadatos y enlaces -->
     <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista en dispositivos móviles -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
     <title>Biodiversidad En Cundinamarca</title> <!-- Título de la página -->
 </head>
+
 <body> <!-- Cuerpo del documento -->
     <header> <!-- Cabecera del sitio -->
-        <nav> <!-- Contenedor de la barra de navegación -->
-            <div class="titulo">Biodiversidad en Cundinamarca</div> <!-- Logo del sitio -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle"> <!-- Checkbox oculto para activar el menú en móviles -->
-            <label for="menu-toggle" class="burger"> <!-- Etiqueta que actúa como ícono de menú (hamburguesa) -->
-                <div class="line1"></div> <!-- Primera línea del ícono de menú -->
-                <div class="line2"></div> <!-- Segunda línea del ícono de menú -->
-                <div class="line3"></div> <!-- Tercera línea del ícono de menú -->
-            </label>
-            <ul class="nav-links"> <!-- Lista de enlaces de navegación -->
-                <li><a href="#introduccion">Introducción</a></li> <!-- Enlace a la sección de Introducción -->
-                <li><a href="#fauna">Fauna</a></li> <!-- Enlace a la sección Sobre Nosotros -->
-                <li><a href="#flora">Flora</a></li> <!-- Enlace a la sección Servicios -->
-                <li><a href="#contact">Contacto</a></li> <!-- Enlace a la sección Contacto -->
-            </ul>
-        </nav>
-    </header>
-<div>
-                <section id="Introduccion">
-                    <img class="container" src="./images/fondo2.png">
+       <nav> <!-- Contenedor de la barra de navegación -->
+           <div class="titulo">Biodiversidad en Cundinamarca</div> <!-- Logo del sitio -->
+         <!-- Checkbox oculto para activar el menú en móviles -->
+           <ul class="nav-links"> <!-- Lista de enlaces de navegación -->
+               <li><a href="#introduccion">Introducción</a></li> <!-- Enlace a la sección de Introducción -->
+               <li><a href="#fauna">Fauna</a></li> <!-- Enlace a la sección Sobre Nosotros -->
+               <li><a href="#flora">Flora</a></li> <!-- Enlace a la sección Servicios -->
+               <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección Contacto -->
+           </ul>
+       </nav>
+   </header>
+                        <div class="slider-box">
+                        <ul>
+                            <li><img src="./img/imagen1.png" alt="Imagen colibri"></li>
+                            <li><img src="./img/imagen2.png" alt="imagen oso"></li>
+                            <li><img src="./img/imagen3.png" alt="imagen gavilan"></li>
+                            <li><img src="./img/imagen4.png" alt="imagen gavilan"></li>
+                        </ul>
+                    </div>
                     <br>
-                    <h1 class="titulo">Introducción </h1>
                 </br>
+                <section id="introduccion">
+                    <h1>Introducción</h1>
                     <p>
                 Cundinamarca, en el corazón de Colombia, alberga una rica
                 biodiversidad con ecosistemas que van desde páramos hasta bosques andinos.
-                Este proyecto busca<br> documentar las especies de flora y fauna de la región, evaluar su estado de conservación y desarrollar estrategias sostenibles para proteger estos recursos naturales.
-                Involucrando a las comunidades locales y otros actores clave, el proyecto pretende aumentar la conciencia sobre la importancia de preservar la biodiversidad y fomentar prácticas de conservación en Cundinamarca.</p>
-                    </section>
-                    <section id ="fauna">
+                Este proyecto busca documentar las especies de flora y fauna de la región,
+                evaluar su estado de conservación y desarrollar estrategias sostenibles para proteger estos recursos naturales.
+                Involucrando a las comunidades locales y otros actores clave, el proyecto pretende aumentar la conciencia sobre
+                la importancia de preservar la biodiversidad y fomentar prácticas de conservación en Cundinamarca.</p>
+                </section>   
+                <section id ="fauna">
+                        <hr>
                         <h1>Fauna</h1>
                         <P>
-                            Cundinamarca, una región ubicada en el centro de Colombia, cuenta con una fauna diversa y rica, influenciada por su variada geografía que incluye montañas,
-                            valles y páramos. Entre los animales más representativos se encuentran especies como el oso de anteojos, el venado de cola blanca y el armadillo, que habitan
-                            en las zonas montañosas y bosques andinos. Además, la región es hogar de una gran variedad de aves, como el cóndor de los Andes y el colibrí, siendo un paraíso
-                            para los observadores de aves. Los ecosistemas acuáticos también albergan especies como la rana de cristal y el bagre, contribuyendo a la biodiversidad del departamento.
-                            La conservación de estos hábitats es crucial para mantener el equilibrio ecológico y proteger la riqueza natural de Cundinamarca.<p>
+                Cundinamarca, una región ubicada en el centro de Colombia, cuenta con una fauna diversa y rica, influenciada por su variada geografía que incluye montañas,
+                valles y páramos. Entre los animales más representativos se encuentran especies como el oso de anteojos, el venado de cola blanca y el armadillo, que habitan
+                en las zonas montañosas y bosques andinos. Además, la región es hogar de una gran variedad de aves, como el cóndor de los Andes y el colibrí, siendo un paraíso
+                para los observadores de aves. Los ecosistemas acuáticos también albergan especies como la rana de cristal y el bagre, contribuyendo a la biodiversidad del departamento.
+                La conservación de estos hábitats es crucial para mantener el equilibrio ecológico y proteger la riqueza natural de Cundinamarca.<p>
                         </section>
+                        <h1>Aves</h1>
+                        <section class="content">
+                        <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave1.png" alt="Colibri" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Tamaño:</strong> Muy pequeñas</li>
+                                            <li><strong>Colores:</strong> Brillantes</li>
+                                            <li><strong>Habilidad:</strong> Capacidad de volar en todas direcciones</li>
+                                            <li><strong>Alimentación:</strong> néctar</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave2.png" alt="Copeton" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Características:</strong> Pequeñas con un característico copete en la cabeza</li>
+                                            <li><strong>Hábitat:</strong> Áreas urbanas y rurales</li>
+                                            <li><strong>Canto:</strong> Melodioso</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave3.png" alt="Carpintero" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Habilidad:</strong> Perforar la corteza de los árboles con su pico</li>
+                                            <li><strong>Alimentación:</strong> Insectos encontrados bajo la corteza</li>
+                                            <li><strong>Cuerpo:</strong> Robusto</li>
+                                            <li><strong>Colas:</strong> Fuertes</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave4.png" alt="Turpial" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                        <li><strong>Nombre Común:</strong> Turpial</li>
+                                     <li><strong>Tamaño:</strong> Mediano</li>
+                                     <li><strong>Plumaje:</strong> Generalmente amarillo y negro</li>
+                                     <li><strong>Canto:</strong> Melodioso</li>
+                                     <li><strong>Distribución:</strong> América Central y del Sur</li>
+                                     <li><strong>Hábitat:</strong> Bosques, áreas abiertas y jardines</li>
+                                     <li><strong>Alimentación:</strong> Frutos, insectos y pequeños animales</li>
+                                    </ul>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave5.png" alt="Mirla Patinaranja" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Tamaño:</strong> Mediano</li>
+                                            <li><strong>Plumaje:</strong> Oscuro con flancos anaranjados o rufos</li>
+                                            <li><strong>Hábitat:</strong> Bosques montanos y áreas con vegetación densa en los Andes</li>
+                                            <li><strong>Alimentación:</strong> Frutos e insectos</li>
+                                            <li><strong>Canto:</strong> Melodioso</li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  </div>
+
+                                  <div class="galeria">
+                                    <a target="_blank" href="">
+                                      <img src="img/ave6.png" alt="Eufonia" width="220" height="220">
+                                    </a>
+                                    <div class="desc">
+                                        <ul>
+                                            <li><strong>Familia:</strong> Fringillidae</li>
+                                            <li><strong>Características:</strong> Pequeños pájaros de colorido plumaje</li>
+                                            <li><strong>Canto:</strong> Melodioso</li>
+                                            <li><strong>Distribución:</strong> Principalmente en América Central y del Sur</li>
+                                          </ul>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </section>
+                        <br>
+                        <br>
                         <section id ="flora">
                             <h1>Flora</h1>
                             <P>
-                                Cundinamarca, en el corazón de Colombia, alberga una rica
-                                biodiversidad con ecosistemas que van desde páramos hasta bosques andinos.
-                           <br> Este proyecto busca documentar las especies de flora y fauna de la región, evaluar su estado de conservación y desarrollar estrategias sostenibles para proteger estos recursos naturales.
-                                Involucrando a las comunidades locales y otros actores clave, el proyecto pretende aumentar la conciencia sobre la importancia de preservar la biodiversidad y fomentar prácticas de conservación en Cundinamarca.</p>
-                                    </section>
+                posee una flora rica y diversa, gracias a su variada topografía y clima. Esta región alberga una mezcla de ecosistemas
+                que van desde los páramos hasta las selvas tropicales, cada uno con su propio conjunto de plantas características.                                En los páramos, se encuentran especies adaptadas a las bajas temperaturas y la alta radiación solar, como los frailejones
+                y las plantas almohadilladas. En las zonas más bajas y cálidas, la vegetación es más exuberante, con abundantes bosques de
+                niebla que están llenos de helechos, bromelias y orquídeas. Además, los cultivos de flores ornamentales, como las rosas y
+                los claveles, son prominentes debido a las condiciones favorables para la floricultura, lo que hace de Cundinamarca una
+                región vital tanto ecológica como económicamente para Colombia.
                                 </div>
-
-        
+                            </section>
+                        </div>
+                            <section id="contacto">
+                                <form>
+                                <h1>CONTACTO<strong></h1>
+                                    <div class="input-group">
+                                <label for="name">Nombre</label>
+                                <i class="fa-solid fa-user"></i> <input type="name" placeholder="Ingrese nombre">
+                                <label for="tel">Número</label>
+                                <i class="fa-solid fa-phone"></i> <input type="tel" placeholder="Ingrese Numero">
+                                <label for="email">Email</label>
+                                <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Ingrese Correo">
+                                <label for="message">Mensaje</label>
+                                <textarea name="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                                <div class="form-text">
+                                    <a href="#">Políticas de privacidad</a>
+                                    <a href="#">Términos y condiciones</a>
+                                </div>
+                                <input type="submit" class="btn" Value="Enviar">
+                            </div>
+                            </form>
+                        </section>
+                        <footer>
+                            HOLA
+                        </footer>
 </body>
 </html>
+
 
