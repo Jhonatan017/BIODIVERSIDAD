@@ -6,20 +6,21 @@
 }
 
 /* Estilo básico del cuerpo */
-body {
-    font-family: Arial, sans-serif; /* Fuente por defecto */
+body,p {
+    font-family:"Roboto Serif", serif;"/*  /* Fuente por defecto */
     font-size: 20px;
-    background-color: #F2F0D8;/*Fondo de la pagina web*/
-
+    background-color: #012840;/*Fondo de la pagina web*/
+    color: #F5F4E1;
 }
 h1{
  text-align: center; /*Titulos centrados*/
+ font-size: 25px;
 
 }  
 
 /* Estilo de la cabecera */
 header {
-    background-color: rgba(23, 122, 21, 0.848);; /* Color de fondo oscuro */
+    background-color: #011526; /* Color de fondo oscuro */
     padding: 30px 30px; /* Espaciado interno */
     color: white; /* Color de texto blanco */
     text-align: center;
@@ -83,16 +84,18 @@ section{
 
 /* Efecto hover en los enlaces */
 .nav-links a:hover {
-    color: #A65729; /* Cambiar a color tomate al pasar el ratón */
+    color: #20638C; /* Cambiar a color de los links */
 }
 /* Estilos específicos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
 }
 .slider-box {
+    margin-top:25px;
     width: 1200px;
     height: auto;
     margin: 0% auto;
     overflow: hidden;
+    margin-top: 25px;
 }
 
 .slider-box ul {
@@ -130,9 +133,10 @@ section{
 
 /* Cada galería individual */
 div.galeria {
+    background-color: #012840;
     box-sizing: border-box; /* Asegura que el padding y border no aumenten el ancho */
     margin: 10px;
-    border: 1px solid #130202;
+    border: 5px solid #20638C;
     width: 350px;
 }
 div.galeria img {
@@ -143,10 +147,11 @@ div.galeria img {
 div.desc {
     padding: 15px;
     text-align: justify;
+    color: #F5F4E1;
 }
 ul{
 list-style: none; /* Eliminar viñetas de la lista */
-margin-bottom: 15px;
+margin-bottom: 10px;
 }
 /*Aqui comienza el formulario de contacto */
   /* Contenedor que rodea el formulario */
@@ -158,18 +163,19 @@ margin-bottom: 15px;
 }
 
 form {
-    margin-top: 80px;
-    background-color: white;
+    display: flex;
+    flex-direction: column; /* Opcional: si el contenido se organiza verticalmente */
+    margin-top: 50px;
+    background-color: #012840;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 50px 55px;
+    padding: 50px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 600px;
-    height: 750px;
-}
-.input-grid{
-    display: grid;
+    max-width: 600px; /* Ajusta según necesites */
+    min-height: 750px; /* Mantén la altura flexible */
+    border: 5px solid #20638C;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
 }
 
 .input-group {
@@ -179,24 +185,26 @@ form {
 }
 
 label {
-    color: #283629;
+    color: #F5F4E1;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 input, textarea {
-    padding: 17px 25px;
+    padding: 17px 20px;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-color: #EDFFF0;
-    border: 2px solid #F0FAF1;
-    color: #283629;
+    background-color: #011526;
+    border: 2px solid #20638C;
+    color: white;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #b5cab6;
+    color: white;
 }
 
 .form-text {
@@ -207,24 +215,27 @@ input::placeholder, textarea::placeholder {
 }
 
 .form-text a {
-    color: #76b28e;
+    color: white;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
 
 .btn {
+    display: inline-flex;
+    padding: 10px 20px;
     font-size: 16px;
     color: white;
-    border: 0;
     border-radius: 25px;
-    background-color: #51d94c;
-    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    background-color: #012840;
+    box-shadow: 0 0 20px #20638C;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
-    background-color: rgba(23, 122, 21, 0.848);
+    background-color: #20638C;
 }
 .containe {
     max-width: 1200px;
@@ -232,7 +243,8 @@ input::placeholder, textarea::placeholder {
 }
 
 .footer {
-    background-color: #24262b;
+    margin-top: 30px;
+    background-color:#011526;
     padding: 20px 0;
 }
 
@@ -251,7 +263,7 @@ input::placeholder, textarea::placeholder {
     color: white;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
+    border-bottom: 2px solid #20638C;
     padding-bottom: 10px;
 }
 
