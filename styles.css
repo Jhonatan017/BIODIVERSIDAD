@@ -6,17 +6,17 @@
 }
 
 /* Estilo básico del cuerpo */
-body,p {
-    font-family:"Roboto Serif", serif;"/*  /* Fuente por defecto */
+body, p {
+    font-family: "Roboto Serif", serif; /* Fuente por defecto */
     font-size: 20px;
-    background-color: #012840;/*Fondo de la pagina web*/
+    background-color: #012840; /* Fondo de la página web */
     color: #F5F4E1;
 }
-h1{
- text-align: center; /*Titulos centrados*/
- font-size: 25px;
 
-}  
+h1 {
+    text-align: center; /* Titulos centrados */
+    font-size: 25px;
+}
 
 /* Estilo de la cabecera */
 header {
@@ -25,50 +25,46 @@ header {
     color: white; /* Color de texto blanco */
     text-align: center;
 }
+
 /* Contenedor de la barra de navegación */
 nav {
     display: flex; /* Usar flexbox para la disposición */
     justify-content: space-between; /* Espacio entre elementos */
     align-items: center; /* Alinear elementos en el centro verticalmente */
 }
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25 px;
-}
+
 /* Titulo de la pagina */
 .titulo {
-    font-family: sans-serif;
     align-content: center;
     display: center;
-    justify-self:center;
+    justify-self: center;
     font-size: 30px; /* Tamaño de fuente grande */
     font-weight: bold; /* Texto en negrita */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
-.container{
+
+.container {
     text-align: center;
-   /* border: red 2px solid;*/
-  margin-left:200px;
-  margin-right:200px;
-  justify-items: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-items: auto;
 }
-section{
-    font-family:;
- /* border: red 2px solid;*/
-  margin-left:200px;
-  margin-right:200px;
-  justify-items: auto;
-  text-align: justify;
-}    
+
+section {
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-items: auto;
+    text-align: justify;
+}
+
 /* Estilo de la lista de enlaces de navegación */
 .nav-links {
     list-style: none; /* Eliminar viñetas de la lista */
     display: flex; /* Usar flexbox para la disposición en línea */
 }
+
 /* Estilo de los elementos de la lista */
 .nav-links li {
     margin-left: 20px; /* Espaciado entre enlaces */
@@ -86,12 +82,47 @@ section{
 .nav-links a:hover {
     color: #20638C; /* Cambiar a color de los links */
 }
+
 /* Estilos específicos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
+    .container,
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
 }
+
 .slider-box {
-    margin-top:25px;
-    width: 1200px;
+    margin-top: 25px;
+    width: 1113px;
     height: auto;
     margin: 0% auto;
     overflow: hidden;
@@ -125,7 +156,7 @@ section{
     100% { margin-left: 0%; } /* Regresa al inicio para repetir */
 }
 
-.content{
+.content {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     justify-content: center; /* Centra las columnas en el contenedor */
@@ -139,6 +170,7 @@ div.galeria {
     border: 5px solid #20638C;
     width: 350px;
 }
+
 div.galeria img {
     width: 100%;
     height: auto;
@@ -149,51 +181,77 @@ div.desc {
     text-align: justify;
     color: #F5F4E1;
 }
-ul{
-list-style: none; /* Eliminar viñetas de la lista */
-margin-bottom: 10px;
+
+ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    margin-bottom: 10px;
 }
-/*Aqui comienza el formulario de contacto */
-  /* Contenedor que rodea el formulario */
+
+/* Aqui comienza el formulario de contacto */
+/* Contenedor que rodea el formulario */
 #contacto {
+    background: linear-gradient(
+        180deg,
+        rgba(37, 34, 63, 1) 0%,
+        rgba(31, 61, 98, 1) 50%,
+        rgba(35, 40, 72, 1) 100%
+    ); /* Fondo del formulario */
+    max-width: 74%;
+    margin: 0 auto;
     display: flex;
+    align-content: center;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
+    min-height: 20vh; /* Asegura que el contenedor ocupe al menos el alto de la ventana */
+}
+
+.contacto {
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
 }
 
 form {
-    display: flex;
-    flex-direction: column; /* Opcional: si el contenido se organiza verticalmente */
-    margin-top: 50px;
-    background-color: #012840;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    max-width: 600px; /* Ajusta según necesites */
-    min-height: 750px; /* Mantén la altura flexible */
-    border: 5px solid #20638C;
-    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
-}
-
-.input-group {
+    padding: 10px;
+    border-radius: 15px;
+    width: 800px;
+    height: auto;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 30px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    color: #F5F4E1;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
 input, textarea {
-    padding: 17px 20px;
-    border-radius: 25px;
+    padding: 20px 50px;
+    border-radius: 15px;
     margin-bottom: 20px;
     background-color: #011526;
     border: 2px solid #20638C;
@@ -222,8 +280,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .btn {
+    width: auto;
     display: inline-flex;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 16px;
     color: white;
     border-radius: 25px;
@@ -237,18 +296,17 @@ input::placeholder, textarea::placeholder {
 .btn:hover {
     background-color: #20638C;
 }
-.containe {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
+.btn:active {
+    transform: scale(1.05);
+}
 .footer {
     margin-top: 30px;
     background-color:#011526;
     padding: 20px 0;
 }
-
 .footer-row {
+    background-color: #011526;
     display: flex;
     flex-wrap: wrap;
 }
